@@ -3,11 +3,11 @@ package com.agcarvalho.exportador_factory_method;
 /**
  * Exporta dados de uma lista de {@link Produto} para HTML.
  *
- * <p>Observe que, como estamos usando o padrão Simple Factory para instanciar
+ * <p>Observe que, como estamos usando agora o padrão Factory Method para instanciar
  * objetos {@link ExportadorListaProduto}, as classes concretas como esta são definidas com visibilidade "package",
  * não podendo ser acessadas fora do pacote.
  * Assim, não teremos como instanciar diretamente tais classes.
- * A Simple Factory faz isso pra nós.</p>
+ * A Factory Method faz isso pra nós.</p>
  *
  * @author Manoel Campos da Silva Filho
  */

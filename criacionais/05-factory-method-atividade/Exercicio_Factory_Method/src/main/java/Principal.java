@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Executa a aplicação Exportador utilizando Factory Method.
- * @author Manoel Campos
+ * @author Adriano Carvalho (Adaptado de @author original Manoel Campos)
  */
 public class Principal {
     public static void main(String[] args) {
