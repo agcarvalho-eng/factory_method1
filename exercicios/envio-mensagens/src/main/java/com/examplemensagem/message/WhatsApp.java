@@ -1,4 +1,4 @@
-package com.manoelcampos.message;
+package com.examplemensagem.message;
 
 /**
  * Envia mensagens pelo WhatsApp.

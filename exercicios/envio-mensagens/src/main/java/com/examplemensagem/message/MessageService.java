@@ -1,4 +1,4 @@
-package com.manoelcampos.message;
+package com.examplemensagem.message;
 
 /**
  * Interface para a implementação

@@ -1,4 +1,4 @@
-package com.manoelcampos.message;
+package com.examplemensagem.message;
 
 /**
  * Envia mensagens de email.
@@ -7,6 +7,6 @@ package com.manoelcampos.message;
 public class Email implements MessageService {
     @Override
     public void send(final String destination, final String msg) throws MessageSendException {
-        //TODO: Inclua um print para simular o envio da mensagem
+        System.out.printf("Enviando msg E-MAIL para %s: %s%n", destination, msg);
     }
 }

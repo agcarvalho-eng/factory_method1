@@ -10,23 +10,17 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Envio de Mensagens
-
-Atualmente, aplicações de diversas plataformas como web e mobile possuem recursos de envio de mensagens por diferentes meios como: email, sms, WhatsApp, notificações push, etc.
-
-Considere você precisará: 
-
-- trocar a forma de envio de mensagens por outra;
-- ou alternar entre diferentes formas. 
-
-No entanto, você não quer ficar escrevendo `if()` em todos os locais onde precisa definir qual classe será instanciada para enviar mensagens e quer que o processo de decisão de qual classe instanciar (que define a forma de envio de mensagens) seja encapsulado.
-
-Faça as alterações necessárias no projeto atual e implemente um padrão para resolver os problemas mencionados.
-
-> O projeto requer JDK 11 ou superior.
+## Envio de Mensagens
 
 == Responda
 
-1. Qual padrão de projeto pode ser utilizado para resolver este problema? Implemente a solução (não precisa enviar mensagens de fato, apenas simular com prints).
+1. Qual padrão de projeto pode ser utilizado para resolver este problema?
 
-Implemente o projeto e envie link para repositório no GitHub, onde o README deve conter as respostas.
+ Podemos utilizar duas estratégias aqui neste problema.
+ Para resolver a parte específica de "encapsular o processo de decisão de qual classe instanciar", o padrão
+ Simple Factory pode ser implementado.
+ Entretanto, como temos um problema da necessidade de uma família de algoritmos (diferentes formas de enviar
+ mensagens: email, sms, whatsapp) e a necessidade de torná-los intercambiáveis,  permitindo que o cliente
+ (no caso a classe Newsletter) possa utilizar qualquer um deles sem conhecer os detalhes de  sua implementação,
+ pode ser utilizado o padrão Strategy.
+ Neste sentido, pode-se aqui utilizar uma conjunção do Simple Factory com o Strategy.

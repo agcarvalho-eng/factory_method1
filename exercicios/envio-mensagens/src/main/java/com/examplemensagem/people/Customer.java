@@ -1,4 +1,4 @@
-package com.manoelcampos.people;
+package com.examplemensagem.people;
 
 /**
  * Representa uma pessoa que seja cliente da empresa.

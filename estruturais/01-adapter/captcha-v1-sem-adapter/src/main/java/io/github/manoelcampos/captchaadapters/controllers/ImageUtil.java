@@ -5,6 +5,7 @@ import lombok.SneakyThrows;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 /**
  * @author Manoel Campos
@@ -21,10 +22,13 @@ public final class ImageUtil {
      * @param image imagem pra obter um array de bytes
      * @return array de bytes da imagem
      */
-    @SneakyThrows
     public static byte[] bufferedImageToByteArray(final BufferedImage image) {
         final var baos = new ByteArrayOutputStream();
-        ImageIO.write(image, "png", baos);
+        try {
+            ImageIO.write(image, "png", baos);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         return baos.toByteArray();
     }
 }

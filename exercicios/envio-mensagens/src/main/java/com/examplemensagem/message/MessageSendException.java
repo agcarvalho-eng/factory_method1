@@ -1,4 +1,4 @@
-package com.manoelcampos.message;
+package com.examplemensagem.message;
 
 /**
  * Exceção para indicar que houve erro ao tentar enviar uma mensagem por um {@link MessageService}.
